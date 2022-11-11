@@ -1,0 +1,165 @@
+.contacts{
+    @media (min-width: $tablet) {
+        position: relative;
+        margin-top: 46px;
+     }
+     
+     @media (min-width: $desktop) {
+        
+     }
+}
+
+.contacts__logo{
+    display: none;
+    
+    @media (min-width: $tablet) {
+       display: initial;
+       position: absolute;
+       right: 5%;
+       top: -21px;
+    }
+    
+    @media (min-width: $desktop) {
+       position: initial;
+    }
+}
+
+.contacts__title, .contacts__container{
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 0;
+
+    @media (min-width: $tablet) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.contacts__title{
+    font: normal 700 18px/30px "Open Sans";
+
+    @media (min-width: $tablet) {
+        font: normal 700 43px/50px "Open Sans";
+    }
+    
+    @media (min-width: $desktop) {
+        font: normal 700 53px/57px "Open Sans";
+    }
+}
+
+.contacts__info {
+    position: relative;
+    display: flex;
+    margin-right: 5%;
+
+    @media (min-width: $desktop) {
+        margin-left: 18%;
+    }
+}
+
+.contacts__item {
+    font: normal 400 14px/30px "Open Sans";
+    color: $text-color;
+    margin-right: 40px;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+#email {
+   text-decoration: underline $highlight-color;
+}
+
+#email:hover{
+    color: $highlight-color;
+}
+
+#email:active{
+    color: $highlight-color;
+    text-decoration: none;
+}
+
+.contacts__map{
+    width: 100%;
+    height: 457px;
+    margin-top: 18px;
+
+    @media (min-width: $desktop) {
+        width: 527px;
+        position: absolute;
+        top: 0;
+        right: 6%;
+    }
+}
+
+.contacts__column{
+    margin-left: 40px;
+}
+
+.contacts__navigation{
+    position: relative;
+}
+
+// .map-pin{
+//     position: absolute;
+//     top: 45%;
+//     right: 43%;
+//     transform: translate(-50%, -50%);
+// }
+
+.contacts__button{
+    margin: 38px auto ;
+    display: block;
+    font: normal 700 18px/20px "Open Sans";
+    color: $text-color;
+    background: $main-bg-color;
+    padding: 12px 0;
+    border: 2px solid $text-color;
+    width: 100%;
+    text-transform: uppercase;
+    max-width: 292px;
+    cursor: pointer;
+
+    @media (min-width: $desktop) {
+        margin: 38px 202px;
+        max-width: 230px;
+    }
+}
+
+.contacts__button:hover{
+    background-color: $dark-tetx-color;
+    color: $main-bg-color;
+    opacity: 0.8;
+}
+
+.contacts__button:active{
+    opacity: 0.6;
+}
+
+
+.contacts__title, .contacts__logo{
+    @media (min-width: $tablet) {
+        display: inline;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 73px;
+        margin-left: 76px;
+    }
+    
+}
+
+.contacts__container{
+
+    .contacts__item:nth-child(1) {
+        white-space: nowrap;
+    }
+
+    @media (min-width: $tablet) {
+        display: flex;
+        
+    }
+    
+    @media (min-width: $desktop) {
+        display: initial;
+    }
+}

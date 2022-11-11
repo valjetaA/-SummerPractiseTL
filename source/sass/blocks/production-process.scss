@@ -1,0 +1,153 @@
+.production-process{
+    position: relative;
+    margin: 40px 9%;
+    border: 1px solid $border-color;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    @media (min-width: $desktop) {
+        margin-left: 5%;
+        margin-right: 5%;
+        position: relative;
+        align-items: flex-end;
+        min-height: 455px;
+    } 
+}
+
+.production-process:hover{
+    box-shadow: 0 0 15px 1px $light-bg-color;
+}
+
+.production-process:active{
+    box-shadow: 0 0 10px 1px $light-bg-color;
+}
+
+.production-process__img{
+    width: 100%;
+}
+
+.production-process__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 100px;
+    height: 77px;
+}
+
+.production-process__icon:hover{
+    width: 105px;
+    height: 82px;
+    
+}
+
+.production-process__icon:active{
+    opacity: 0.8;
+}
+
+
+.production-process__title{
+    margin-right: 20px;
+    text-align: left;
+    font: normal 700 15px/24px $font;
+
+    @media (min-width: $tablet) {
+        font: normal 700 20px/24px $font;
+    } 
+}
+
+.production-process__video{
+    position: relative;
+
+    @media (min-width: $tablet) {
+        order: -1;
+    } 
+
+    @media (min-width: $desktop) {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.production-process__container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7px;
+
+    @media (min-width: $tablet) {
+        justify-content: flex-start;
+    } 
+
+    @media (min-width: $desktop) {
+        display: block;
+        width: 147px;
+        margin-top: 36px;
+        margin-right: 135px;
+    } 
+}
+.production-process__logo{
+    margin-left: 20px;
+    margin-right: 81px;
+    
+    @media (min-width: $tablet) {
+        margin-left: 46px;
+    } 
+
+    @media (min-width: $desktop) {
+        margin-left: 0;
+    } 
+}
+
+.production-process__text{
+    text-align: left;
+    padding: 0 6%;
+    font: normal 400 13px/24px $font;
+
+    @media (min-width: $tablet) {
+       font: normal 400 15px/30px $font;
+    } 
+
+    @media (min-width: $desktop) {
+        width: 254px;
+        padding: 0 3%;
+    } 
+}
+
+.production-process__button{
+    color: $text-color;
+    background: $main-bg-color;
+    padding: 12px 0;
+    border: 2px solid $text-color;
+    width: 100%;
+    text-transform: uppercase;
+    font: normal 700 17px/20px "Open Sans";
+    cursor: pointer;
+
+    @media (min-width: $desktop) {
+        padding: 15px 50px;
+    } 
+}
+
+.production-process__button:hover{
+    background-color: $dark-tetx-color;
+    color: $main-bg-color;
+    opacity: 0.8;
+}
+
+.production-process__button:active{
+    opacity: 0.6;
+}
+
+.production-process__key{
+    margin: 34px 6%;
+
+    @media (min-width: $desktop) {
+        margin-top: 36px;
+        margin-right: 42px;
+    } 
+}
+

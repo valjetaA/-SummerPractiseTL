@@ -1,0 +1,52 @@
+.about-us{
+    margin-left: 9%;
+    margin-right: 9%;
+    
+    @media (min-width: $tablet) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    
+    @media (min-width: $desktop) {
+      margin-left: 16%;
+    }
+}
+
+.about-us__container{
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.about-us__title{
+    font: normal 700 25px/30px "Open Sans";
+
+    @media (min-width: $tablet) {
+        font: normal 700 43px/50px "Open Sans";
+    }
+      
+    @media (min-width: $desktop) {
+        font: normal 700 53px/57px "Open Sans";
+    }
+}
+
+.about-us__text{
+    font: normal 700 17px/20px "Open Sans";
+
+    @media (min-width: $tablet) {
+        font: normal 700 20px/22px "Open Sans";
+    }
+      
+    @media (min-width: $desktop) {
+        font: normal 700 20px/22px "Open Sans";
+    }
+}
+
+.about-us__element{
+    @media (min-width: $tablet) {
+        flex-basis: 50%;
+    }
+}
+

@@ -1,0 +1,128 @@
+.product-menu{
+    position: relative;
+    margin-left: 9%;
+    margin-right: 9%;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: space-between; 
+    }
+}
+
+.product-menu__element{
+    margin-top: 9%;
+
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+    
+    @media (min-width: $desktop) {
+        display: initial;
+    }
+}
+
+.wave-catalog, .wave-form{
+    width: 100%;
+    display: initial;
+    position: absolute;
+    @media (min-width: $tablet) {
+        top: 385px;
+    }
+    
+    @media (min-width: $desktop) {
+        width: initial;
+    }
+
+}
+
+.product-menu__container{
+    border: 1px solid $border-color;
+    text-align: left;
+
+    @media (min-width: $tablet) {
+        width: 50%;
+    }
+
+    @media (min-width: $desktop) {
+        width: auto;
+    }
+}
+
+.product-menu__element:hover{
+    box-shadow: 0 0 15px 1px $light-bg-color;
+}
+
+.product-menu__element:active{
+    box-shadow: 0 0 10px 1px $light-bg-color;
+}
+
+.product-picture{
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        width: 50%;
+    }
+}
+
+.product-menu__product-img{
+    width: 100%;
+    display: block;
+}
+
+.product-menu__product-name{
+    padding-left: 40px;
+    font: normal 700 17px/24px $font;
+}
+
+.product-menu__product-name:hover{
+    opacity: 0.6;
+}
+
+.product-menu__product-name:active{
+    opacity: 0.4;
+}
+
+.product-menu__product-info{
+    margin: 0 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border-color;
+    font: normal 400 15px/30px $font;
+    color: $text-color;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 40%;
+
+        &--feature{
+            padding-bottom: 34%;
+        }
+    }  
+
+    @media (min-width: $desktop) {
+        padding-bottom: 24px;
+
+        &--feature{
+            padding-bottom: 0;
+        }
+    }
+}
+
+.product-menu__product-cost{
+    display: flex;
+    position: relative;
+    padding: 20px 0 20px 40px;
+    font: normal 700 15px/30px $font;
+
+}
+
+.product-button{
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    top: 39px;
+    right: 35px;
+    cursor: pointer;
+}
+

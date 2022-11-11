@@ -1,0 +1,170 @@
+.promo-part__title--index{
+  position: absolute;
+  padding-top: 30%;
+  width: 100%;
+  font: normal 700 27px/30px $font;
+
+  @media (min-width: $tablet) {
+    font: normal 700 43px/50px $font;
+  }
+
+  @media (min-width: $desktop) {
+    font: normal 700 53px/57px $font;
+  }
+}
+
+.catalog-title, .form-title{
+  background-color: $light-bg-color;
+  margin: 0;
+  padding: 73px 0;
+  text-align: center;
+  font: normal 700 27px/30px $font;
+
+  @media (min-width: $tablet) {
+    padding: 128px 0;
+    font: normal 700 43px/50px $font;
+  }
+
+  @media (min-width: $desktop) {
+    font: normal 700 53px/57px $font;
+    margin-top: 41px;
+  }
+}
+
+.promo-part__container{
+  @media (min-width: $desktop) {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.promo-part{
+  text-align: center;
+  
+  @media (min-width: $tablet) {
+    margin-bottom: -148px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 41px;
+  }
+  
+}
+
+.promo-part__interior-item{
+  position: absolute;
+  display: flex;
+  background-color: $highlight-color;
+  margin-top: -79px;
+  width: 100%;
+  height: 103px;
+}
+
+.promo-part__text{
+  font: normal 700 17px/24px $font;
+  color: $main-bg-color;
+  margin: 24px 0 0 30px;
+}
+
+.promo-part__svg{
+  position: absolute;
+  padding-top: 20px;
+
+  &--first{
+    right: 37px;
+  }
+
+  &--second{
+    right: 28px;
+  }
+
+  @media (min-width: $tablet) {
+    position: relative;
+    padding-left: 101px;
+  }
+
+  @media (min-width: $desktop) {
+    font: normal 700 53px/57px $font;
+  }
+
+}
+
+
+.promo-part__text, .promo-part__svg{
+  display: flex;
+}
+
+.promo-part__kids-toys{
+  display: flex;
+  background-color: $light-highlight-color;
+  margin-top: 24px;
+  width: 100%;
+  height: 103px;
+}
+
+.promo-part__interior-item, .promo-part__kids-toys{
+  @media (min-width: $tablet) {
+    position: relative;
+    bottom: 132px;
+    display: inline-flex;
+    width: 43%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    z-index: 5;
+  }
+}
+
+.promo-part__interior-item:hover{
+  background: rgba(#59D5BC, 2);
+  // padding-bottom: 5px;
+
+  // .promo-part__text{
+  //   padding-top: 5px;
+  // }
+}
+
+.promo-part__interior-item:active{
+  background: rgba(#59D5BC, 2);
+
+  .promo-part__svg--first{
+    opacity: 0.4;
+  }
+}
+
+.promo-part__kids-toys:hover{
+  background: rgba(#46C1AE, 2);
+  // padding-bottom: 5px;
+
+  // .promo-part__text{
+  //   padding-top: 19px;
+  // }
+}
+
+.promo-part__kids-toys:active{
+  background: rgba(#46C1AE, 2);
+
+  .promo-part__svg--second{
+    opacity: 0.4;
+  }
+}
+
+.wave{
+  display: none;
+  max-width: $desktop;
+  
+  @media (min-width: $tablet) {
+    width: 100%;
+    display: initial;
+    position: absolute;
+  }
+  @media (min-width: $desktop) {
+    width: 100%;
+    display: initial;
+    position: absolute;
+    z-index: 5;
+  }
+}

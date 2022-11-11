@@ -1,0 +1,65 @@
+.header{
+  position: relative;
+  z-index: 5;
+}
+
+.header__logo{
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 112px;
+    max-width: 112px;
+    height:80px;
+    margin: 16px 0 9px 19px;
+  }
+  
+  @media (min-width: $desktop) {
+    display: block;
+    width: 149px;
+    max-width: 149px;
+    height: 74px;
+    margin: 16px 0 9px 245px;
+  }
+}
+
+.header__logo:hover{
+  opacity: 0.6;
+}
+
+.header__logo:active{
+  opacity: 0.4;
+}
+
+.header__button{
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+  
+  @media (min-width: $desktop) {
+    position: relative;
+    display: inline;
+    top: 106px;
+    padding-left: 48px;
+    text-decoration: none;
+    color: $dark-tetx-color;
+    font: normal 700 15px/24px "Open Sans";
+  }
+}
+
+.header__text{
+  visibility: hidden;
+  position: absolute;
+  top: 115px;
+  right: 29px;
+
+  @media (min-width: $tablet) {
+    visibility: visible;
+  }
+  
+  @media (min-width: $desktop) {
+    visibility: visible;
+  }
+}
